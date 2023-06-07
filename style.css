@@ -20,3 +20,59 @@ button#nav-profile-tab {
 textarea#msm_send {
     width: 100%;
 }
+
+#nav-tabContent {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button_send {
+    display: flex;
+    float: right;
+}
+
+.button_send button {
+    background-color: #5c9cd8;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    font-weight: 500;
+    padding: 8px 25px;
+    border: none;
+}
+
+.button_send button:hover {
+    background-color: #4878a5;
+    scale: 1.1;
+    transition: all 0.1s linear;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.nav-link.active {
+    color: #5c9cd8 !important;
+    font-weight: 500 !important;
+    background-color: #f8f9fa !important;
+    border-color: transparent !important;
+    /*  */
+    border-top-left-radius: 10px;
+    border-top: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+}
+
+#nav-tabContent {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#nav-home-tab {
+    /* border-top-left-radius: 10px;
+    border-top: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important; */
+}
