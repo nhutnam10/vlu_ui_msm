@@ -9,44 +9,131 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
-        <div class="modal">
-            <p class="modal_head_content">AMSM...</p>
-            <div class="modal_content">
-                <p>Danh sách gửi</p>
+<body class="d-flex justify-content-center align-items-center bg-light">
+    <div class="card p-3 shadow" style="width: 600px;">
+        <h2 class="text-center p-3">Send SMS</h2>
+        <nav>
+            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Send SMS</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Send ABC</button>
             </div>
-            <div class="grid-container">
-                <div class="grid-item">nguyễn hòa nguyễn hòa</div>
-                <div class="grid-item">nguyễn hòa nguyễn hòa</div>
-                <div class="grid-item">nguyễn hòa nguyễn hòa</div>
-            </div>
-            <div class="modal_more">
-                <p>view more</p>
-            </div>
-            <form action="">
-                <div class="wrap_form">
-                    <div class="brand">
-                        <p>Chọn brand name</p>
-                        <input id="brand_name" name="brand_name" type="text">
+        </nav>
+        <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <p><strong>Danh sách</strong></p>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <!-- //map here -->
+                            <span>cxx</span>
+                            <span> - </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="wrap-box d-flex justify-content-between mt-4" id="">
+                        <div class="box-left">
+                            <p class="fw-bold">Chọn brand</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="box-right">
+                            <p class="fw-bold">Template</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </div>
                     </div>
+                    <div class=""></div>
                 </div>
-                <div class="wrap_message">
-                    <textarea class="message" name="message" id="message"></textarea>
+                <div class="form_text mt-5">
+                    <textarea name="" id="msm_send" rows="5"></textarea>
                 </div>
-                <div class="wrap_button">
-                    <button type="button">Hủy</button>
-                    <button class="btn_submit" type="submit">Gửi</button>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <p><strong>Danh sách 2</strong></p>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <!-- //map here -->
+                            <span>cxx</span>
+                            <span> - </span>
+                        </li>
+                    </ul>
                 </div>
-            </form>
+                <div class="">
+                    <div class="wrap-box d-flex justify-content-between mt-4" id="">
+                        <div class="box-left">
+                            <p class="fw-bold">Chọn brand</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="box-right">
+                            <p class="fw-bold">Template</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=""></div>
+                </div>
+                <div class="form_text mt-5">
+                    <textarea name="" id="msm_send" rows="5"></textarea>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 <script src="./main.js"></script>
 
 </html>
